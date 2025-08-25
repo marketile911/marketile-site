@@ -51,3 +51,26 @@
     ✅ Thank you! Your message has been sent. We'll get back to you soon.
   </div>
 </section>
+    <script>
+  const homeForm = document.getElementById("homeContactForm");
+  const homeThankYou = document.getElementById("homeThankYouMessage");
+
+  homeForm.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const formData = new FormData(homeForm);
+
+    const response = await fetch(homeForm.action, {
+      method: homeForm.method,
+      body: formData,
+      headers: { 'Accept': 'application/json' }
+    });
+
+    if (response.ok) {
+      homeForm.reset();
+      homeForm.style.display = "none";
+      homeThankYou.style.display = "block";
+    } else {
+      alert("Oops! Something went wrong. Please try again.");
+    }
+  });
+</script>
