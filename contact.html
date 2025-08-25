@@ -30,17 +30,24 @@
   <section class="hero">
     <h1>Get in Touch 📞</h1>
     <p>We’d love to hear from you! Let’s talk about how we can grow your brand together.</p>
-  </section>
+  <section class="contact">
+  <h2 style="text-align:center; color:white;">Send Us a Message 📩</h2>
+  
+  <form class="contact-form" id="homeContactForm" action="https://formspree.io/f/xrbazwkz" method="POST">
+    <label for="home-name">Your Name</label>
+    <input type="text" id="home-name" name="name" required>
 
-   <form class="contact-form" action="https://formspree.io/f/xrbazwkz" method="POST">
-  <label for="name">Your Name</label>
-  <input type="text" id="name" name="name" required>
+    <label for="home-email">Your Email</label>
+    <input type="email" id="home-email" name="email" required>
 
-  <label for="email">Your Email</label>
-  <input type="email" id="email" name="email" required>
+    <label for="home-message">Your Message</label>
+    <textarea id="home-message" name="message" rows="5" required></textarea>
 
-  <label for="message">Your Message</label>
-  <textarea id="message" name="message" rows="5" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
 
-  <button type="submit">Send Message</button>
-</form>
+  <!-- Thank You Message (hidden by default) -->
+  <div id="homeThankYouMessage" style="display:none; text-align:center; color:white; margin-top:20px; font-size:1.2em;">
+    ✅ Thank you! Your message has been sent. We'll get back to you soon.
+  </div>
+</section>
