@@ -54,22 +54,52 @@
     </div>
   </section>
 
-  <!-- Contact Form -->
-  <section class="contact">
-    <h2 style="text-align:center; color:white;">Get in Touch 📩</h2>
-    <form class="contact-form">
-      <label for="name">Your Name</label>
-      <input type="text" id="name" name="name" required>
+<section class="contact">
+  <h2 style="text-align:center; color:white;">Send Us a Message 📩</h2>
+  
+  <form class="contact-form" id="homeContactForm" action="https://formspree.io/f/yourFormID" method="POST">
+    <label for="home-name">Your Name</label>
+    <input type="text" id="home-name" name="name" required>
 
-      <label for="email">Your Email</label>
-      <input type="email" id="email" name="email" required>
+    <label for="home-email">Your Email</label>
+    <input type="email" id="home-email" name="email" required>
 
-      <label for="message">Your Message</label>
-      <textarea id="message" name="message" rows="5" required></textarea>
+    <label for="home-message">Your Message</label>
+    <textarea id="home-message" name="message" rows="5" required></textarea>
 
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
+    <button type="submit">Send Message</button>
+  </form>
+
+  <!-- Thank You Message (hidden by default) -->
+  <div id="homeThankYouMessage" style="display:none; text-align:center; color:white; margin-top:20px; font-size:1.2em;">
+    ✅ Thank you! Your message has been sent. We'll get back to you soon.
+  </div>
+</section>
+
+<script>
+  const homeForm = document.getElementById("homeContactForm");
+  const homeThankYou = document.getElementById("homeThankYouMessage");
+
+  homeForm.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const formData = new FormData(homeForm);
+
+    const response = await fetch(homeForm.action, {
+      method: homeForm.method,
+      body: formData,
+      headers: { 'Accept': 'application/json' }
+    });
+
+    if (response.ok) {
+      homeForm.reset();
+      homeForm.style.display = "none";
+      homeThankYou.style.display = "block";
+    } else {
+      alert("Oops! Something went wrong. Please try again.");
+    }
+  });
+</script>
+
 
   <!-- Footer -->
   <footer>
