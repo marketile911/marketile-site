@@ -422,3 +422,25 @@ footer {
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.4);
 }
+.blog-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+.blog-navigation a {
+  background: linear-gradient(135deg, #00c853, #1de9b6, #00bfa5);
+  color: white;
+  text-decoration: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: transform 0.2s, background 0.3s;
+}
+
+.blog-navigation a:hover {
+  transform: translateY(-3px);
+  background: linear-gradient(135deg, #1de9b6, #00bfa5, #00c853);
+}
