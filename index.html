@@ -1,47 +1,85 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Marketile — Let Your Brand Speak</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marketile | Let Your Brand Speak</title>
   <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <header>
-    <h1>Marketile</h1>
-    <nav>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="logo"><a href="index.html">Marketile</a></div>
+    <div class="menu">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="services.html">Services</a>
       <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+    </div>
+  </nav>
 
+  <!-- Hero Section -->
   <section class="hero">
-    <h2>Let Your Brand Speak. <br>We’ll Make It Heard 🎤</h2>
-    <p>Helping startups, creators, and small businesses grow online with smart, creative, and results-driven digital marketing.</p>
-    <a href="services.html" class="btn">Explore Services 🚀</a>
+    <h1>Let Your Brand Speak. We’ll Make It Heard 🚀</h1>
+    <p>Smart, creative, and results-driven digital marketing for startups, creators, and small businesses.</p>
+    <a href="services.html" class="button">Explore Services 🚀</a>
   </section>
 
-  <section>
-    <h2>Why Marketile?</h2>
-    <p>We don’t just “do marketing.” We act as your digital growth partner — combining creativity with data, storytelling with strategy, and design with performance.</p>
-    <ul>
-      <li>✔ SEO & PPC that drive real ROI</li>
-      <li>✔ Social media strategies that matter</li>
-      <li>✔ Content & email that convert</li>
-      <li>✔ Digital strategies built for growth</li>
-    </ul>
+  <!-- Services Section -->
+  <section class="services">
+    <div class="card">
+      <h3>SEO Optimization</h3>
+      <p>Boost visibility with Google-friendly SEO strategies that drive organic traffic.</p>
+    </div>
+    <div class="card">
+      <h3>Paid Advertising</h3>
+      <p>Targeted Google Ads & PPC campaigns for measurable ROI.</p>
+    </div>
+    <div class="card">
+      <h3>Social Media Marketing</h3>
+      <p>Grow your brand on Instagram, LinkedIn, and more with engaging strategies.</p>
+    </div>
+    <div class="card">
+      <h3>Email Marketing</h3>
+      <p>Automated email campaigns that nurture leads and boost conversions.</p>
+    </div>
+    <div class="card">
+      <h3>Content Creation</h3>
+      <p>Messaging that speaks, sells, and sticks — from copywriting to design.</p>
+    </div>
+    <div class="card">
+      <h3>Lead Generation</h3>
+      <p>Smart digital strategies to attract better leads and achieve growth.</p>
+    </div>
   </section>
 
+  <!-- Contact Form -->
+  <section class="contact">
+    <h2 style="text-align:center; color:white;">Get in Touch 📩</h2>
+    <form class="contact-form">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Your Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
   <footer>
-    <p>© 2025 Marketile. All rights reserved.</p>
+    <p>© 2025 Marketile | All Rights Reserved</p>
     <p>
-      <a href="https://www.linkedin.com/company/marketile/" target="_blank"><i class="fab fa-linkedin"></i></a>
-      <a href="mailto:marketile911@gmail.com"><i class="fas fa-envelope"></i></a>
-      <a href="https://wa.me/918628841215" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://www.linkedin.com/company/marketile/" target="_blank" style="color: #ffeb3b;">
+        Connect on LinkedIn
+      </a>
     </p>
   </footer>
+
 </body>
 </html>
