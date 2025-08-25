@@ -502,3 +502,19 @@ footer {
 .related-card .read-more:hover {
   background: linear-gradient(135deg, #1de9b6, #00bfa5, #00c853);
 }
+.btn-back {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 15px;
+  background: linear-gradient(135deg, #2ecc71, #27ae60);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-back:hover {
+  background: linear-gradient(135deg, #27ae60, #219150);
+  transform: scale(1.05);
+}
