@@ -444,3 +444,61 @@ footer {
   transform: translateY(-3px);
   background: linear-gradient(135deg, #1de9b6, #00bfa5, #00c853);
 }
+.related-blogs {
+  margin-top: 60px;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+}
+
+.related-blogs h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+.related-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.related-card {
+  background: rgba(255,255,255,0.1);
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.related-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+}
+
+.related-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #00e676;
+}
+
+.related-card p {
+  font-size: 0.95rem;
+  color: #ddd;
+  margin-bottom: 15px;
+}
+
+.related-card .read-more {
+  display: inline-block;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  background: linear-gradient(135deg, #00c853, #1de9b6, #00bfa5);
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.related-card .read-more:hover {
+  background: linear-gradient(135deg, #1de9b6, #00bfa5, #00c853);
+}
