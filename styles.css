@@ -252,12 +252,15 @@ footer {
 }
 
 .logo-text {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #00ff99; /* green highlight */
-  font-family: "Poppins", sans-serif;
-  letter-spacing: 1px;
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  background: linear-gradient(90deg, #00ff99, #00e0ff, #a1ffce);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 2px;
 }
+
 
 /* Nav Links */
 .nav-links {
